@@ -10,7 +10,7 @@
 void Main()
             {
                 int a = 4;
-                int b = 4;
+                int b = 5;
                 int[,] ourArray = new int[a, b];
                 FillArray(ourArray);
                 PrintArray(ourArray);

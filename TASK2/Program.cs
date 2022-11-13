@@ -7,7 +7,7 @@
 5 2 6 7
 Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка*/
 
-//если две строки с одинаковым минимальным значением - не решила.
+//если две строки с одинаковым минимальным значением??
 
 void Main()
 {
@@ -26,13 +26,13 @@ void GetSummAndFindMin(int[,] arr)
     int theMinRow = 0;
 
     for (int i = 0; i < arr.GetLength(0); i++)
-    { summ =0;
+    {
+        summ = 0;
         for (int j = 0; j < arr.GetLength(1); j++)
         {
             summ += arr[i, j];
-
-
         }
+        
         if (i == 0)
         {
             minSumm = summ;
@@ -43,6 +43,7 @@ void GetSummAndFindMin(int[,] arr)
             theMinRow = i;
 
         }
+
 
 
     }
